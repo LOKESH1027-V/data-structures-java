@@ -58,8 +58,8 @@ More **data structures and algorithms** will be added as the repository grows.
 
 * [x] Sorting Algorithms
 * [x] Arrays
-* [ ] Linked Lists
-* [ ] Recursion
+* [x] Linked Lists
+* [x] Recursion
 * [ ] Stacks
 * [ ] Queues
 * [ ] Trees

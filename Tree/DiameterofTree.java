@@ -1,11 +1,13 @@
 import java.util.ArrayDeque;
 import java.util.Queue;
+public class DiameterofTree {
+    static int maxi=0;
 
-public class InorderTraversal {
     public static void main(String[] args) {
         int[] arr={1,2,3,4,5,6,7,8,9,10};
         Tree root=buildTree(arr);
-        InorderTraversal(root);
+        diameterOfTree(root);
+        System.out.println(maxi);
 
     }
 
@@ -30,11 +32,13 @@ public class InorderTraversal {
         return root;
     }
 
-    public static void InorderTraversal(Tree root){
-        if(root==null) return;
-        InorderTraversal(root.left);
-        System.out.print(root.data+"->");
-        InorderTraversal(root.right);
+    public static int diameterOfTree(Tree root){
+        if(root==null) return 0;
+        int lh=diameterOfTree(root.left);
+        int rh=diameterOfTree(root.right);
+        maxi=Math.max(maxi, rh+lh);
+        return 1+Math.max(lh,rh);
 
     }
+
 }
