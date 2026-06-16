@@ -62,7 +62,7 @@ More **data structures and algorithms** will be added as the repository grows.
 * [x] Recursion
 * [ ] Stacks
 * [ ] Queues
-* [ ] Trees
+* [x] Trees
 * [ ] Graphs
 * [ ] Dynamic Programming
 
